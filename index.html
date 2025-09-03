@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhấp vào để mua sắm</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7fafc;
+        }
+
+        .image-link-container {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            cursor: pointer;
+        }
+
+        .image-link-container:hover {
+            transform: scale(1.02);
+            box-shadow: 0 10px 25px rgba(238, 77, 45, 0.4);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen p-4">
+
+    <div class="bg-white rounded-xl p-8 max-w-lg w-full text-center shadow-lg">
+        <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-2">Nhấp vào hình ảnh dưới đây để truy cập</h1>
+        <p class="text-gray-600 mb-8">
+            
+        </p>
+
+        <!-- 
+            Phần quan trọng nhất.
+            - Thay thế giá trị của thuộc tính "href" bằng đường link Shopee của bạn.
+            - Thay thế giá trị của thuộc tính "src" bằng đường dẫn đến hình ảnh của bạn.
+        -->
+        <a href="https://s.shopee.vn/8fIXdJMLii" target="_blank" rel="noopener noreferrer"
+           class="inline-block rounded-lg overflow-hidden image-link-container">
+           <img src="https://sf-static.upanhlaylink.com/img/image_2025090318bc6f10c557f50d8306ffb661d4bd49.jpg" 
+                alt="Mua sắm trên Shopee" class="w-full h-auto rounded-lg">
+        </a>
+        
+        <p class="text-gray-500 text-sm mt-4">
+            
+        </p>
+    </div>
+
+</body>
+</html>
